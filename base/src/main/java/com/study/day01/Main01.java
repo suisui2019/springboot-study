@@ -14,7 +14,7 @@ public class Main01 {
 
         ListService listService = applicationContext.getBean(ListService.class);
 
-        System.out.println(listService.showListCmd());
+        System.out.println(applicationContext.getEnvironment().getProperty("os.name") + "系统下的列表命令为：" + listService.showListCmd());
 
 
     }
