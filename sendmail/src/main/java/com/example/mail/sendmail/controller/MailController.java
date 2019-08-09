@@ -24,7 +24,7 @@ public class MailController {
     public String sendEmail() {
         Email email_email = new Email();
         List<String> addressList = new ArrayList<String>();
-        addressList.add("xxx@qq.com");
+        addressList.add("xxx@163.com");
         email_email.setToAddress(addressList);
         email_email.setSubject("java碎碎念-主题测试");// 主题
         email_email.setContent("你好！<br><br> 测试邮件发送成功！");
