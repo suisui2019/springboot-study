@@ -5,13 +5,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.3.RELEASE</version>
+        <version>2.1.8.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>spring-cloud-user-service</artifactId>
+    <artifactId>spring-cloud-user-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-user-service</name>
+    <name>spring-cloud-user-consumer</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -31,12 +31,6 @@
     </dependency>
 
     <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>fastjson</artifactId>
-        <version>1.2.60</version>
-    </dependency>
-
-    <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
     </dependency>
@@ -46,8 +40,6 @@
         <artifactId>lombok</artifactId>
         <optional>true</optional>
     </dependency>
-
-
 </dependencies>
 
 <dependencyManagement>
