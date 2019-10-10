@@ -38,7 +38,7 @@
 
     <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
     </dependency>
 
     <dependency>
@@ -46,8 +46,6 @@
         <artifactId>lombok</artifactId>
         <optional>true</optional>
     </dependency>
-
-
 </dependencies>
 
 <dependencyManagement>

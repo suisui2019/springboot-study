@@ -1,0 +1,10 @@
+
+server:
+  port: 8082 #服务端口
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+spring:
+  application:
+    name: user-service-consumer-ribbon

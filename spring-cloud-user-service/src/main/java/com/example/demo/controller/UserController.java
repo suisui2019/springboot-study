@@ -32,6 +32,7 @@ public class UserController {
      */
     @RequestMapping("/getUser")
     public String getUser(Integer id) {
+        log.info("调用getUser接口,id={}",id);
         User user = userMap.get(id);
         return JSON.toJSONString(user);
     }
