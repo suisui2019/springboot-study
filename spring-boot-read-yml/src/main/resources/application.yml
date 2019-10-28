@@ -1,0 +1,18 @@
+wechat:
+  mp:
+    configs:
+    - appid: appid1
+      secret: arr1_secret
+      token: arr1_token
+      aesKey: arr1_key
+      msgDataFormat: JSON
+
+    - appid: appid2
+      secret: arr2_secret
+      token: arr2_token
+      aesKey: arr2_key
+      msgDataFormat: JSON
+server:
+  port: 8888
+  servlet:
+    context-path: /
