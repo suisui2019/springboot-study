@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="log.base" value="./log/logback"/>
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern> %date [%thread] [%X{sessionId}] %-5level %logger{80} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="logfile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.base}.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${log.base}.%d{yyyy -MM-dd}.log.zip</FileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern> %date [%thread] [%X{sessionId}]  %-5level %logger{80} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <logger name="com.sample" level="TRACE"/>
+    <root>
+        <level value="INFO"/>
+        <appender-ref ref="stdout"/>
+        <appender-ref ref="logfile"/>
+    </root>
+</configuration>
