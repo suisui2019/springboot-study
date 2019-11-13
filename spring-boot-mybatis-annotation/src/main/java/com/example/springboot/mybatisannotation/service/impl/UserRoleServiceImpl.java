@@ -1,7 +1,10 @@
 package com.example.springboot.mybatisannotation.service.impl;
 
 import com.example.springboot.mybatisannotation.dao.mapper.UserMapper;
+import com.example.springboot.mybatisannotation.dao.mapper.UserRoleMapper;
 import com.example.springboot.mybatisannotation.entity.User;
+import com.example.springboot.mybatisannotation.entity.UserRole;
+import com.example.springboot.mybatisannotation.service.UserRoleService;
 import com.example.springboot.mybatisannotation.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,23 +16,19 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class UserServiceImpl implements UserService {
+public class UserRoleServiceImpl implements UserRoleService {
 
     @Autowired
-    private UserMapper userMapper;
+    private UserRoleMapper userRoleMapper;
 
-    @Override
-    public List<User> queryAllUsers() {
-        log.info("/queryAllUsers start...");
-        return userMapper.queryAllUsers();
-    }
+
 
     /**
-     * 增加用户
+     * 增加用户角色
      */
     @Transactional(propagation = Propagation.NESTED)
     @Override
-    public int add(User user) {
-        return userMapper.add(user);
+    public int add(UserRole userRole) {
+        return userRoleMapper.add(userRole);
     }
 }

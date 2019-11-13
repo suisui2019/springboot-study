@@ -24,5 +24,5 @@ public interface UserMapper {
      */
     @Options(useGeneratedKeys = true, keyProperty = "id")
     @Insert("insert into User(name,password) values (#{name},#{password})")
-    public int add(User user);
+    int add(User user);
 }
