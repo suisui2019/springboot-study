@@ -1,0 +1,10 @@
+spring:
+  #数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+#mybatis配置
+mybatis:
+  mapperLocations: classpath:mapper/*.xml

@@ -4,4 +4,13 @@
 
 
 
- 
+### 近期文章
+
+
+[一分钟带你学会利用mybatis-generator自动生成代码！](https://mp.weixin.qq.com/s/HSlmvdSsQikfJ8M99MYGNg)
+
+[SpringBoot系列-整合Mybatis（注解方式）](https://mp.weixin.qq.com/s/toH_rCF5Sf3sPK-NPp5OhQ)
+
+[SpringBoot系列-整合Mybatis（XML配置方式）](https://mp.weixin.qq.com/s/Ad8aKvyTgjFlzjOcadO1xQ)
+
+[利用SpringBoot+Logback手写一个简单的链路追踪](https://mp.weixin.qq.com/s/9ozbOBxhW9yreBWH9UTFMQ)
