@@ -19,13 +19,13 @@ public class UserController {
 
     static Map<Integer, User> userMap = new HashMap<>();
 
-    static {
-        //模拟数据库
-        User user1 = new User(1, "张三", "123456");
-        userMap.put(1, user1);
-        User user2 = new User(2, "李四", "123123");
-        userMap.put(2, user2);
-    }
+//    static {
+//        //模拟数据库
+//        User user1 = new User(1, "张三", "123456");
+//        userMap.put(1, user1);
+//        User user2 = new User(2, "李四", "123123");
+//        userMap.put(2, user2);
+//    }
 
     /**
      * 根据id 查询
